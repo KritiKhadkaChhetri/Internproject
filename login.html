@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login | Ecommerce</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-left">
+      <a href="index.html" class="back-link">&larr; Back to shop</a>
+
+      <div class="login-box">
+        <h1 id="formTitle">Get started today!</h1>
+        <p class="login-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero nulla
+          eaque error neque ipsa culpa autem, at itaque nostrum!
+        </p>
+
+        <form id="loginForm" novalidate>
+          <div class="field" id="nameField" hidden>
+            <label class="sr-only" for="name">Full name</label>
+            <input id="name" type="text" placeholder="Enter full name" autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter email" autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label class="sr-only" for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password" autocomplete="current-password" />
+          </div>
+
+          <p class="form-error" id="formError" role="alert"></p>
+
+          <div class="form-bottom">
+            <p class="switch-text">
+              <span id="switchText">You Don't have an account ?</span><a href="#" id="switchLink">Signup</a>
+            </p>
+            <button type="submit" class="login-btn" id="submitBtn">Login</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <aside class="login-image" aria-hidden="true"></aside>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

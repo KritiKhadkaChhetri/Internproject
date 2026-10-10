@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products | Ecommerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="brand">Ecommerce <span class="divider">|</span> Shop Now</a>
+
+    <nav class="nav-links">
+      <a href="products.html" class="nav-item">
+        <span class="badge" id="badge">0</span>
+        products
+      </a>
+      <a href="login.html" class="nav-item">Login</a>
+      <a href="cart.html" class="nav-item cart">
+        Cart
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2v2h2l3.6 7.59-1.35 2.45A2 2 0 0 0 7 17h12v-2H7.42a.25.25 0 0 1-.22-.37L8.1 13h7.45a2 2 0 0 0 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Our products</h1>
+    <div class="product-grid" id="productGrid"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>
